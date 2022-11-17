@@ -4,13 +4,17 @@
 
 def sum_csv(my_file):
     somma = 0
-    my_file = open('shampoo_sales.csv', 'r')
-    for line in my_file:
-        list = line.split(',') è una lista con due valori
-        number = list[1] #ho preso secondo elemento di list (numero)
-        somma += number
+    my_list = []
+    my_file_opened = open(my_file, 'r')
+    for line in my_file_opened:
+        my_list = line.split(',')#è una lista con due valori
+        if my_list[0] != 'Date':
+            number = float(my_list[1]) #ho preso secondo elem   
+            somma += number
+      
     return(somma)
 
 #copiare file dentro replit e chiamare la funzione sotto
 
-somma = sum_csv('shampoo_sales.csv')
+totale = sum_csv('shampoo_sales.csv')
+print(totale)
