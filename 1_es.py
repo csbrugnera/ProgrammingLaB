@@ -1,5 +1,5 @@
 #scrivere una funzione sum_list che sommi tutti gli elementi di una lista
-def sum_list(item):
+def sum_list(my_list):
   somma = 0
   for item in my_list: 
     somma = somma + item
