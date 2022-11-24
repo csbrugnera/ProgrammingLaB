@@ -16,5 +16,5 @@ def sum_csv(my_file):
 
 #copiare file dentro replit e chiamare la funzione sotto
 
-totale = sum_csv('shampoo_sales.csv')
-print(totale)
+#totale = sum_csv('shampoo_sales.csv')
+#print(totale)
