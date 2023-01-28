@@ -3,14 +3,15 @@ class File():
 
     def __init__(self, file_name):
         try:
-            my_file_opened = open(self.name, 'r')
             self.name = file_name
+            my_file_opened = open(self.name, 'r')
+            
       
         except Exception as e:
             print('Non posso leggere file')
             print('Errore di tipo: {}' .format(e))
 
-    def get_data(): 
+    def get_data(File): 
         my_little_list = [] 
         my_big_list = []
         my_file_opened = open(self.name, 'r')

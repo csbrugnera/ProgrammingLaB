@@ -10,7 +10,7 @@ class File():
     def __init__(self, file_name):
         self.name = file_name
 
-    def get_data(): 
+    def get_data(File): #ho aggiunto file
         try:
             my_little_list = []  
             my_big_list = [] 
@@ -22,8 +22,8 @@ class File():
             return(my_big_list)
 
         except Exception as e:
-             print('Ho un errore genrico')
+             print('Ho un errore generico')
              print('Errore di tipo {}' .format(e))
 
-        csv_file = File(shampoo_sales.csv)
-        final_list = csv_file.get_data() 
+csv_file = File('shampoo_sales.csv')
+final_list = csv_file.get_data() 

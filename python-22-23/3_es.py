@@ -5,7 +5,7 @@
 #Provatelo sul file “shampoo_sales.csv”.
 #Poi, committate il file in cui l’avete scritto.
 
-class File()
+class File():
 			def __init__(self, file_name):
 					self.name = file_name
 
